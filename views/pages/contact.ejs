@@ -1,0 +1,63 @@
+<%- include('../layout/headSection') %>
+<%- include('../layout/header') %>
+
+<div class="container my-5">
+  <h1 class="text-center fw-bold mb-4">Contact Us</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-md-7">
+
+      <form>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Mobile Number</label>
+            <input type="number" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Service Type</label>
+            <select class="form-select">
+              <option selected disabled>Select</option>
+              <option>Web Development</option>
+              <option>UI/UX Design</option>
+              <option>Graphic Design</option>
+              <option>Digital Marketing</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+
+        </div>
+
+        <button class="btn btn-dark w-100 mt-3">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<%- include('../layout/Footer') %>

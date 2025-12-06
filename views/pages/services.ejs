@@ -1,0 +1,39 @@
+<%- include('../layout/headSection') %>
+<%- include('../layout/header') %>
+
+<div class="container my-5">
+  <h1 class="text-center fw-bold mb-4">Our Services</h1>
+
+  <div class="row g-4 justify-content-center text-center">
+    <% servicePageData.forEach(s => { %>
+      <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 text-center mx-auto" style="width: 100%;">
+          <div class="mx-auto mt-3" style="width:120px; height:120px;">
+            <img 
+              src="<%= s.profile %>" 
+              class="rounded-circle w-100 h-100" 
+              style="object-fit:cover;"
+            >
+          </div>
+
+          <div class="card-body text-center">
+            <h5 class="fw-bold mt-2"><%= s.title %></h5>
+
+        
+            <div class="d-flex justify-content-center">
+              <hr class="w-50 text-primary">
+            </div>
+
+            <p class="text-muted small"><%= s.content %></p>
+
+            <span class="badge bg-primary px-3 py-2 mt-2 mx-auto">Learn More</span>
+          </div>
+
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('../layout/Footer') %>

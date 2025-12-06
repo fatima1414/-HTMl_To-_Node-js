@@ -1,0 +1,22 @@
+<%- include('../layout/headSection') %>
+<%- include('../layout/header') %>
+
+<div class="container my-5">
+  <h1 class="text-center fw-bold mb-4">Art Gallery</h1>
+
+  <div class="row g-4">
+    <% gallery.forEach(g => { %>
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 shadow-sm">
+          <img 
+            src="<%= g.profile %>" 
+            class="card-img-top img-fluid"
+            style="height:200px; object-fit:cover;"
+          >
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('../layout/Footer') %>
